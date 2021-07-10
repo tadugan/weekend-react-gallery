@@ -1,12 +1,11 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
-function GalleryList() {
+function GalleryList(props) {
     return (
         <>
             <h2>Some GalleryList Content</h2>
             <GalleryItem />
-            <GalleryItem />
-            <GalleryItem />
+            <p></p>
         </>
     );
 }
