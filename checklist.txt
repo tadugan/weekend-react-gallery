@@ -1,0 +1,14 @@
+TODO:
+    
+    [ ] Setup
+        [ ] Add test photos to gallery.data
+    [ ] Components
+        [ ] App.jsx
+            [ ] Import GalleryList 
+            [ ] Add <GalleryList /> to App.jsx return
+            [ ] Axios GET function
+            [ ] Axios PUT function 
+        [ ] GalleryList.jsx
+            [ ] 
+        [ ] GalleryItem.jsx
+    
