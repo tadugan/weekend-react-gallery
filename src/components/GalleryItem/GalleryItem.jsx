@@ -8,20 +8,16 @@ function GalleryItem(props) {
         setDisplayDescription(!displayDescription);
     }
 
-    return ( displayDescription ? (
-            <div>
-                <p className="item-desc" onClick={toggleImage} width="200px" height="200px">{props.description}</p>
-                <button onClick={() => props.addLike(props.id)}>Like</button>
-                <p>likes: {props.likes}</p>
-            </div>
-            ) : (
-            <div>
-                <img className="item-img" onClick={toggleImage} src={props.path} alt="art"/>
-                <button onClick={() => props.addLike(props.id)}>Like</button>
-                <p>likes: {props.likes}</p>
-            </div>
-            )
-    );
+    return (  
+        <div className="item-flex-child">
+            {displayDescription ? <p className="item-desc" onClick={toggleImage} width="200px" height="200px">{props.description}</p> : <img className="item-img" onClick={toggleImage} src={props.path} alt="art"/>}
+            <button onClick={() => props.addLike(props.id)}>Like</button>
+            <p>likes: {props.likes}</p>
+        </div>
+
+            
+        
+);
 }
 
 export default GalleryItem;
