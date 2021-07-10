@@ -1,7 +1,12 @@
-function GalleryItem() {
+function GalleryItem(props) {
     return (
         <>
-            <h3>GalleryItem Stuff</h3>
+            <div>
+                <img src={props.path} alt="art" />
+                <p>{props.description}</p>
+                <p>likes: {props.likes}</p>
+
+            </div>
         </>
     );
 }

@@ -25,7 +25,7 @@ function App() {
         url: '/gallery'
         })
         .then(response => {
-          setGalleryArray(response);
+          setGalleryArray(response.data);
         })
         .catch();
     }
