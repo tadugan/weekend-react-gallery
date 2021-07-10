@@ -12,3 +12,6 @@
     height: 200px;
     margin: auto;
 }
+.item-flex-child {
+    margin: 10px 30px;
+}
