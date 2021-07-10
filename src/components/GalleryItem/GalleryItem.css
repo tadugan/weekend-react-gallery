@@ -1,0 +1,14 @@
+.item-img {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.item-desc {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './GalleryItem.css';
 
 function GalleryItem(props) {
     const [ displayDescription, setDisplayDescription ] = useState(false);
@@ -9,17 +10,17 @@ function GalleryItem(props) {
 
     return ( displayDescription ? (
             <div>
-                <p onClick={toggleImage} width="200px" height="200px">{props.description}</p>
+                <p className="item-desc" onClick={toggleImage} width="200px" height="200px">{props.description}</p>
                 <button onClick={() => props.addLike(props.id)}>Like</button>
                 <p>likes: {props.likes}</p>
             </div>
-        ) : (
+            ) : (
             <div>
-                <img onClick={toggleImage} src={props.path} alt="art" width="200px" height="200px"/>
+                <img className="item-img" onClick={toggleImage} src={props.path} alt="art"/>
                 <button onClick={() => props.addLike(props.id)}>Like</button>
                 <p>likes: {props.likes}</p>
             </div>
-        )
+            )
     );
 }
 
