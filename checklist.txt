@@ -6,11 +6,14 @@ TODO:
         [x] Make GalleryItem component files
     [ ] Components
         [ ] App.jsx
-            [ ] Import GalleryList 
-            [ ] Add <GalleryList /> to App.jsx return
-            [ ] Axios GET function
+            [x] Import GalleryList 
+            [x] Add <GalleryList /> to App.jsx return
+            [x] Axios GET function
             [ ] Axios PUT function 
         [ ] GalleryList.jsx
             [ ] 
         [ ] GalleryItem.jsx
+            [ ] Set conditional formatting
+                [ ] picture/description
+                [ ] like/no likes...
     
