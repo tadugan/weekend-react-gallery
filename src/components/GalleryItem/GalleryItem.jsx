@@ -1,13 +1,25 @@
+import { useState } from 'react';
+
 function GalleryItem(props) {
-    return (
-        <>
+    const [ displayDescription, setDisplayDescription ] = useState(false);
+
+    const toggleImage = () => {
+        setDisplayDescription(!displayDescription);
+    }
+
+    return ( displayDescription ? (
             <div>
-                <img src={props.path} alt="art" width="200px" height="200px"/>
+                <p onClick={toggleImage} width="200px" height="200px">{props.description}</p>
                 <button onClick={() => props.addLike(props.id)}>Like</button>
-                <p>{props.description}</p>
                 <p>likes: {props.likes}</p>
             </div>
-        </>
+        ) : (
+            <div>
+                <img onClick={toggleImage} src={props.path} alt="art" width="200px" height="200px"/>
+                <button onClick={() => props.addLike(props.id)}>Like</button>
+                <p>likes: {props.likes}</p>
+            </div>
+        )
     );
 }
 

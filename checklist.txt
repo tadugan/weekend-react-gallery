@@ -5,15 +5,15 @@ TODO:
         [x] Make GalleryList component files
         [x] Make GalleryItem component files
     [ ] Components
-        [ ] App.jsx
+        [x] App.jsx
             [x] Import GalleryList 
             [x] Add <GalleryList /> to App.jsx return
             [x] Axios GET function
-            [ ] Axios PUT function 
-        [ ] GalleryList.jsx
-            [ ] 
+            [x] Axios PUT function 
+        [x] GalleryList.jsx
         [ ] GalleryItem.jsx
             [ ] Set conditional formatting
-                [ ] picture/description
+                [x] picture/description
                 [ ] like/no likes...
+                [ ] style conditional formats
     
