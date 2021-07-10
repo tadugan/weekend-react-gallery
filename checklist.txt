@@ -4,16 +4,24 @@ TODO:
         [x] Add test photos to gallery.data
         [x] Make GalleryList component files
         [x] Make GalleryItem component files
-    [ ] Components
+    [x] Components
         [x] App.jsx
             [x] Import GalleryList 
             [x] Add <GalleryList /> to App.jsx return
             [x] Axios GET function
             [x] Axios PUT function 
         [x] GalleryList.jsx
-        [ ] GalleryItem.jsx
-            [ ] Set conditional formatting
+        [x] GalleryItem.jsx
+            [x] Set conditional formatting
                 [x] picture/description
                 [ ] like/no likes...
-                [ ] style conditional formats
+                [x] style conditional formats
+
+    Stretch!!
+        [ ] Add postgresql database
+            [ ] Create DB in Postico
+            [ ] Populate with gallery data
+            [ ] Create database.sql for repo
+            [ ] Adjust routes as necessary
+            
     
