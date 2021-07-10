@@ -1,7 +1,9 @@
 TODO:
     
-    [ ] Setup
-        [ ] Add test photos to gallery.data
+    [x] Setup
+        [x] Add test photos to gallery.data
+        [x] Make GalleryList component files
+        [x] Make GalleryItem component files
     [ ] Components
         [ ] App.jsx
             [ ] Import GalleryList 
