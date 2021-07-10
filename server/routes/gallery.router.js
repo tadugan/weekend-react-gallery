@@ -3,20 +3,6 @@ const pool = require('../modules/pool.js');
 const router = express.Router();
 const galleryItems = require('../modules/pool.js');
 
-// DO NOT MODIFY THIS FILE FOR BASE MODE
-
-// PUT Route (outdated)
-// router.put('/like/:id', (req, res) => {
-//     console.log(req.params);
-//     const galleryId = req.params.id;
-//     for(const galleryItem of galleryItems) {
-//         if(galleryItem.id == galleryId) {
-//             galleryItem.likes += 1;
-//         }
-//     }
-//     res.sendStatus(200);
-// }); // END PUT Route
-
 // PUT route to add likes to images
 router.put('/like/:id', (req, res) => {
     const imageId = req.params.id;

@@ -18,10 +18,10 @@ TODO:
                 [x] style conditional formats
 
     Stretch!!
-        [ ] Add postgresql database
-            [ ] Create DB in Postico
-            [ ] Populate with gallery data
-            [ ] Create database.sql for repo
-            [ ] Adjust routes as necessary
-            
+        [x] Add postgresql database
+            [x] Create DB in Postico
+            [x] Populate with gallery data
+            [x] Create database.sql for repo
+            [x] Adjust routes as necessary
+
     
