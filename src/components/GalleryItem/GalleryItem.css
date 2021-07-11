@@ -9,13 +9,16 @@
 
 .item-desc {
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     margin: auto;
-    background-color: white;
+    background-color: #f2f0d4;
+    padding: 5px;
 }
+
 .item-flex-child {
     margin: 10px 30px;
+    text-align: left;
 }
 
 .item-like-btn {
