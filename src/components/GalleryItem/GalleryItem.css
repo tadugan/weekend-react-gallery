@@ -28,7 +28,10 @@
     height: 30px;
     width: 30px;
     padding: 5px;
+}
 
+.item-like-container {
+    text-align: center;
 }
 
 .item-heart-icon {
@@ -40,3 +43,4 @@
 .item-like-count {
     display: inline;
 }
+

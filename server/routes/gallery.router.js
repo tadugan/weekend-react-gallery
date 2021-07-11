@@ -37,4 +37,24 @@ router.get('/', (req, res) => {
         });
 });
 
+// POST route to add new image to database
+router.post('/', (req, res) => {
+    const newImage = req.body;
+    // Query to get all rows from the database
+    const queryText = `
+    INSERT INTO images ("path", "description")
+	VALUES ($1, $2);
+    `;
+
+    pool.query(queryText, [newImage.path, newImage.description])
+        .then(dbResponse => {
+            console.log('Sucessfully added new image to database.');
+            res.sendStatus(200)
+        })
+        .catch(error => {
+            console.log('Error adding new image. Error:', error);
+            res.sendStatus(500);
+        });
+});
+
 module.exports = router;
