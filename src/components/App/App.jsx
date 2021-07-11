@@ -6,6 +6,7 @@ import axios from 'axios';
 
 // Components
 import GalleryList from '../GalleryList/GalleryList.jsx';
+import Footer from '../Footer/Footer.jsx';
 import Axios from 'axios';
 
 function App() {
@@ -46,6 +47,22 @@ function App() {
         });
     }
 
+    // Function to POST/add a new image using form inputs in footer
+    const addNewImage = (imageObject) => {
+      Axios({
+        method: 'POST',
+        url: '/gallery',
+        data: imageObject
+      })
+        .then(response => {
+          console.log('New image added to gallery.');
+          fetchGallery();
+        })
+        .catch(error => {
+          console.log('Error adding new image. Error:', error);
+        });
+    }
+
     return (
       <div className="App">
         <header className="App-header">
@@ -54,8 +71,12 @@ function App() {
         <main>
           <GalleryList galleryArray={galleryArray} addLike={addLike}/>
         </main>
+        <footer>
+          <Footer addNewImage={addNewImage}/>
+        </footer>
       </div>
     );
 }
 
 export default App;
+
