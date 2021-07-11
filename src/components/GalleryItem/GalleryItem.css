@@ -4,6 +4,7 @@
     height: 200px;
     display: block;
     margin: auto;
+    background-color: white;
 }
 
 .item-desc {
@@ -11,7 +12,28 @@
     width: 200px;
     height: 200px;
     margin: auto;
+    background-color: white;
 }
 .item-flex-child {
     margin: 10px 30px;
+}
+
+.item-like-btn {
+    background-color: lightgrey;
+    margin: 5px;
+    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+
+}
+
+.item-heart-icon {
+    height: 15px;
+    width: 17px;
+    margin: auto;
+}
+
+.item-like-count {
+    display: inline;
 }
