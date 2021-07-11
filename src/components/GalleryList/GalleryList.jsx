@@ -4,7 +4,6 @@ import './GalleryList.css';
 function GalleryList(props) {
     return (
         <>
-            <h2>Some GalleryList Content</h2>
                 <section className="list-flex-container">
                     {props.galleryArray.map(item =>
                         <GalleryItem 

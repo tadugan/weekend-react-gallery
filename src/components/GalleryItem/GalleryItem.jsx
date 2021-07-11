@@ -11,8 +11,10 @@ function GalleryItem(props) {
     return (  
         <div className="item-flex-child">
             {displayDescription ? <p className="item-desc" onClick={toggleImage} width="200px" height="200px">{props.description}</p> : <img className="item-img" onClick={toggleImage} src={props.path} alt="art"/>}
-            <button onClick={() => props.addLike(props.id)}>Like</button>
-            <p>likes: {props.likes}</p>
+                <div>
+                    <p className="item-like-count" >likes: {props.likes}</p>
+                    <button className="item-like-btn" onClick={() => props.addLike(props.id)}><img className="item-heart-icon" src="images/heart_icon.png" alt="Heart" /></button>
+                </div>
         </div>
 
             

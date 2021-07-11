@@ -12,9 +12,14 @@ CREATE TABLE images (
 
 -- Populate Table with data
 INSERT INTO images ("path", "description")
-	VALUES ('images/goat_small.jpg', 'Photo of a goat taken at Glacier National Park.'),
-	('https://m.media-amazon.com/images/I/81gUrfk01uL._CR204,0,1224,1224_UX256.jpg', 'I really like pizza.'),
-	('https://pm1.narvii.com/7549/7935e5d6c4cac5c845f2499103c97d6f544eafbcr1-256-256v2_00.jpg', 'Star Wars is good');
+	VALUES ('images/pizza.jpeg', 'There are only 2 kinds of pizza: great pizza and fine pizza. I will take what I can get.'),
+	('images/burritos.jpeg', 'Breakfast, Lunch, or Dinner, a burrito is always a wise choice.'),
+	('images/chicken_wings.jpeg', 'I usually makes these in the air fryer. But I hit up D-spot Wings whenever I''m in the area.'),
+	('images/donut.jpeg', 'Any excuse to eat dessert in the morning works for me.'),
+	('images/milkshakes.jpeg', 'Even my mild lactose intolerance cannot stand between me and a milkshake.'),
+	('images/steak.jpeg', 'As I get older, I prefer my steak less and less done. I''m down to Medium-rare now.'),
+	('images/sushi.png', 'I discovered sushi relatively recently, and it has quickly become my main take0out go to,');
+
 
 -- Select all rows from Table
 SELECT * FROM images;
