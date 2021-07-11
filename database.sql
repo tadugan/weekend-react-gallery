@@ -18,7 +18,7 @@ INSERT INTO images ("path", "description")
 	('images/donut.jpeg', 'Any excuse to eat dessert in the morning works for me.'),
 	('images/milkshakes.jpeg', 'Even my mild lactose intolerance cannot stand between me and a milkshake.'),
 	('images/steak.jpeg', 'As I get older, I prefer my steak less and less done. I''m down to Medium-rare now.'),
-	('images/sushi.png', 'I discovered sushi relatively recently, and it has quickly become my main take0out go to,');
+	('images/sushi.png', 'I discovered sushi relatively recently, and it has quickly become my main takeout go-to.');
 
 
 -- Select all rows from Table
